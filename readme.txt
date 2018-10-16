@@ -6,3 +6,8 @@
 
 Путь к файлу index.html:
 \app\pages
+
+
+//link on example page
+
+https://asyanm.github.io/Waxom/
