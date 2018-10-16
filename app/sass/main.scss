@@ -1,0 +1,173 @@
+@import "fonts.scss";
+@import "normalize.scss";
+@import "vars.scss";
+@import "mixins.scss";
+
+body {
+    background-color: $white;
+    font-family: $montLight;
+    font-size: 16px;
+    color: $grayLight;
+    line-height: 1.5;    
+    overflow-x: hidden;
+}
+
+div,
+p,
+h2, h3,
+input,
+ul, li {
+    outline: none;
+    font-family: $montLight;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.wrapper {
+	@include row;
+	align-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.page-content {
+	@include row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 0;
+	width: 100%;	
+
+	.section-caption {
+		font-family: $raleSemi;
+		font-size: 30px;
+		color: $gray;
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.section-description {
+		max-width: 770px;
+		margin: 10px 0 30px 0;
+		line-height: 1.8;
+	}
+}
+
+.link {
+	@include row;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	color: $white;
+}
+
+.animated-effect {	
+	transform: scale(0.99 , 0.99);
+
+	&:hover {
+	    transition: .3s ease-out;
+	    transform: scale(1, 1);
+	}
+}
+
+.link__company-info {
+	font-family: $raleReg;
+	font-size: 34px;
+}
+
+.btn {
+	@include row;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+    background-color: transparent;
+	border-radius: 4px;
+}
+
+.btn__sand {
+	width: 170px;
+	height: 47px;
+
+    font-family: $raleExtra;
+	text-transform: uppercase;
+	color: $white;	
+	background-color: $sand;
+	box-shadow: 0 3px 0 $sandDark;
+
+	&:hover {
+		background-color: $sandLight;
+	}
+
+}
+
+.threeInRow-container {
+	@include container;
+	@include row;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: auto;
+
+	.threeInRow-item {
+		@include row;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 369px;
+
+		.threeInRow-image {
+			width: 100%;
+			background-color: $grayAshed;
+		}
+
+		.threeInRow-desc {
+			@include row;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			width: calc(100% - 30px);
+			padding-top: 15px;
+			padding-left: 30px;
+		}
+	}
+}
+
+.svg__arrow-readMore {
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+    padding-top: 3px;
+}
+
+// CORE
+@import "header.scss";
+@import "slider.scss";
+@import "services.scss";
+@import "realizationIdeas.scss";
+@import "textBoxes.scss";
+@import "latestProjects.scss";
+@import "video.scss";
+@import "mobileDevices.scss";
+@import "counters.scss";
+@import "recentPosts.scss";
+@import "partners.scss";
+@import "footer.scss";
+@import "media.scss";

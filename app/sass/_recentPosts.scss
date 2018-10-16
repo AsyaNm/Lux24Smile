@@ -1,0 +1,149 @@
+.recentPosts {
+    @include container;
+    @include row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 754px;
+
+    .recentPosts-container {
+
+        .recentPost-item {
+            height: 395px;
+            box-sizing: border-box;
+
+            .recentPost-image {
+                height: 220px;
+                background-color: $grayAshed;
+            }
+
+            .recentPost-desc {
+                padding-top: 30px;
+                font-size: 14px;
+                border: 1px solid $whiteAshed;
+                border-top: none;
+                width: calc(100% - 32px);
+                height: calc(100% - 251px);
+
+                .recentPost-caption {
+                    font-family: $raleMed;
+                    font-size: 20px;
+                    color: $gray;
+                }
+
+                .recentPost-text {                  
+                    max-width: 310px;
+                    text-align: start; 
+                    margin: 10px 0 20px;                    
+                }
+
+                .link__readMore {
+                    color: $sandLight;
+
+                    .svg__arrow-readMore {
+                        fill: $sandLight;
+                    }
+                }
+            }
+
+            .recentPost-date {
+                @include row;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                width: 50px;
+                height: 60px;
+                color: $white;
+                position: relative;
+                z-index: 1;
+                top: 20px;
+                left: -349px;
+
+                .recentPost-date-day,
+                .recentPost-date-month {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;                    
+                }
+
+                .recentPost-date-day {
+                    height: 35px;
+                    font-size: 24px;
+                    background-color: $grayDarker;                   
+                    border-radius: 4px 4px 0 0;
+                }
+
+                .recentPost-date-month {
+                    height: 25px;
+                    font-family: $roboReg;
+                    font-size: 12px;
+                    background-color: $grayDark;
+                    border-radius: 0 0 4px 4px;
+                }
+            }
+
+            &.active {
+                background-color: rgba(47,47,47, 0.7);
+
+                .recentPost-image {
+                    z-index: -1;
+                    background-color: $grayDarker;
+                }
+
+                .recentPost-desc {
+                    border: none;
+                    width: calc(100% - 30px);
+                    height: calc(100% - 250px);
+                    background-color: $brown;
+
+                    .recentPost-caption {
+                        color: $sandLight;
+                    }
+
+                    .recentPost-text {
+                        color: $white;
+                    }
+                }
+
+                .recentPost-date-day {
+                    background-color: $sandLight;
+                }
+
+                .recentPost-date-month {
+                    background-color: $sandDarker;
+                }
+            }
+        }
+
+        .slider-nav {
+            @include row;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            margin-top: 40px;    
+
+            .slider-arrow {
+                width: 24px;
+                height: 24px;
+
+                .svg__arrow-slider {
+                    width: 24px;
+                    height: 24px;
+                    fill: $sliderArrow;
+
+                    &:hover {
+                        fill: $sliderArrow__hover;
+                    }
+                }
+            }
+
+            .slider-arrow__left {
+                margin-right: 8px;
+            }
+        }
+    }
+}

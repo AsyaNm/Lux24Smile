@@ -1,0 +1,43 @@
+.textBoxes {
+	@include row;
+	flex-direction: colunm;
+	justify-content: center;
+	align-items: center; 
+    width: 100%;
+    height: 148px;
+    background: linear-gradient(to right, $gradStart, $gradEnd);
+
+    .textBoxes-container {
+    	@include container;
+		@include row;
+        flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .column-left {
+            @include row;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+
+            .section-caption {
+                font-family: $raleReg;
+                font-size: 28px;
+                color: $white;
+
+                span {
+                    color: $sandLight;
+                }
+            }
+
+            .section-description {
+                margin: 0;
+                font-size: 18px;
+                color: $brownLight;
+            }
+        }
+    }
+}

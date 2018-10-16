@@ -1,0 +1,257 @@
+.main-footer {
+	@include row;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+    width: 100%;
+    height: 100%;
+
+    .footer-1 {
+		@include row;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center; 
+		width: 100%;
+		height: 510px; 
+		background-color: $wetAsphalt;
+
+	    .footer-1-container {
+	    	@include container;
+			@include row;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 14px;
+		    color: $gray;
+		    width: 100%;
+		    height: 100%;
+
+		    .footer-1-column {				
+		    	@include row;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+				width: calc(25% - 25px);
+				height: calc(100% - 100px);
+				padding-top: 100px;
+				margin-right: 25px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				.footer-1-column-ul {
+					@include row;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: flex-start;
+					width: 100%;			
+				}
+
+				.delimiter-horizontal {	
+					@include row;
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
+					width: 100%;			
+					padding: 10px 0 20px 0;
+
+					&:first-child {
+						padding-top: 0;
+					}
+
+					&:after {
+	                	content: '';
+		                position: relative;
+		                display: inline;
+		                top: 18px;
+		                left: 0;
+		                width: 100%;
+		                height: 1px;                
+		                border-bottom: 1px solid $grayDarker;
+		            }
+
+	                &:last-child:after {
+	                		border-bottom: none;
+	                }
+	            }
+		    }
+
+		    .footer-company-info {
+		    	height: calc(100% - 80px);
+				padding-top: 80px;
+
+		    	.link__company-info {
+			    	@include row;
+			    	justify-content: space-between;
+			    	align-items: center;
+
+					.logo {
+						transform: scale(0.98, 0.98);
+					}
+
+					&:hover .logo {
+					    transition: .3s ease-out;
+					    transform: scale(1, 1);
+					}
+			    }
+
+			    .company-info-text {
+			    	margin: 25px 0;
+			    }
+
+			    .link__readMore {
+			    	font-family: $montReg;
+			    	color: $clayWhite;
+
+				    .svg__arrow-readMore {
+	                    fill: $clayWhite;
+	                } 
+			    } 
+		    }
+
+			.footer-1-column-caption {
+				font-family: $raleBold;
+				font-size: 24px;
+				color: $white;
+				margin-bottom: 20px;
+
+			}
+
+			.footer-recentPosts .recentPost-item {
+
+				.recentPost-date {
+					font-size: 12px;
+					color: $grayDarker;
+				}
+
+				.recentPost-text {
+					display: inline;
+					width: 100%;
+
+				}
+
+                &.active {
+
+                	.recentPost-date {
+						color: $white;
+					}
+
+					.recentPost-text {
+						color: $sandLight;
+
+					}
+                }
+			}
+
+			.footer-ourTwitter .ourTwitter-item {
+
+				.ourTwitter-text {
+					display: inline;
+					width: 100%;
+
+					.link__interior {
+						color: $linkInterior;
+					}
+				}
+
+				.ourTwitter-time {
+					font-size: 12px;
+					color: $grayDarker;
+					margin-top: 5px;
+				}
+			}
+
+			.footer-dribbbleWidget-container {
+				@include row;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				width: 100%;
+				height: auto;
+
+				.dribbbleWidget-image {
+					width: auto;
+					height: 98px;
+					background-color: $grayAshed;
+					margin-right: 10px;
+					margin-bottom: 10px;
+
+					&:nth-child(2n) {
+						margin-right: 0;
+					}
+				}
+			}
+
+		    .link__interior,
+		    .link__external {
+				display: inline;
+				margin: 0 2px;
+			}	    	
+	    }
+    }
+
+    .link__external {
+    	color: $linkExternal !important;
+    }
+
+    .footer-2 {
+    	@include row;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 108px; 
+		background-color: $black;
+
+		.footer-2-container {
+			@include container;
+			@include row;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		    width: 100%;
+		    height: 100%;
+
+		    .footer-2-row {
+		    	@include row;
+				flex-direction: row;
+				align-items: center;
+				width: 50%;
+				height: 100%;
+				font-size: 13px;
+				color: $gray;
+
+				span {
+					display: flex;
+					flex-direction: row;
+
+					.link__external {
+						margin-left: 4px;
+					}
+				}
+
+				.link {
+					color: $gray;
+				}
+
+			    .delimiter-vertical {
+			    	margin: 0 10px;
+			    }				
+		    }
+
+		    .footer-row__left {
+				justify-content: flex-start;
+
+				.link__faq {
+					color: $sandLight;
+					text-transform: uppercase;
+				}
+		    }
+
+		    .footer-row__right {
+				justify-content: flex-end;
+		    }
+		}
+    }
+}

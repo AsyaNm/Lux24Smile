@@ -1,0 +1,151 @@
+.slider {
+	@include row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+    width: 100vw;
+    height: 100vh;
+    
+    .slider-container {
+		@include row;
+        flex-direction: column;
+		justify-content: center;
+		align-items: center;
+        width: 100%;
+        height: 100%;
+        color: $white;
+        position: relative;
+        background-color: $sliderBack;
+
+        .slider-image {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .slider-body {
+            @include container;
+            @include row;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+
+            span {
+                font-family: $raleMed;
+                font-size: 36px;
+                line-height: 1.2;
+            }
+
+            .slider-caption {
+                font-family: $raleExtra;
+                font-size: 52px;
+            }
+
+            .slider-discription {
+                font-size: 16px;
+                max-width: 570px;
+                text-align: center;
+            }
+            
+            .btn__slider {
+                margin-top: 55px;
+            }
+        }
+    }    
+
+    .slider-nav {
+        @include container;
+        @include row;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%; 
+        z-index: 2;   
+
+        .slider-arrow {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            
+            top: calc(50% - 35px);
+
+            .svg__arrow-slider {
+                width: 70px;
+                height: 70px;
+                fill: $sliderArrow;
+
+                &:hover {
+                    fill: $sliderArrow__hover;
+                }
+            }
+        }
+
+        .slider-arrow__left {
+            left: -150px;
+        }
+
+        .slider-arrow__right {
+            right: -150px;
+        }
+
+        .slider-points {
+            @include row;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            top: calc(50vh - 40px);
+            left: calc(50% - 42px);
+
+            .slider-point {
+                color: $sliderPoint;
+                margin-right: 7px;
+                width: 10px;
+                height: 10px;
+
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:after {
+                    content: '';
+                    position: relative;
+                    display: inline;
+                    left: 0;
+                    top: 0;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: $sliderPoint;                        
+                }
+
+                &.active {
+                    width: 16px;
+                    height: 16px;
+
+                    &:after {
+                        content: '';
+                        position: relative;
+                        display: inline;
+                        left: 0;
+                        top: 0;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;                
+                        border: 2px solid $sliderPoint;
+                        background-color: transparent;
+                    }
+                }
+
+                &.animated-effect:hover {
+                    transform: scale(1.37, 1.37);
+                }
+            }
+        } 
+    }
+}

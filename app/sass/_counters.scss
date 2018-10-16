@@ -1,0 +1,55 @@
+.counters {
+	@include row;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to right, $gradStart, $gradEnd);
+
+    .counters-container {
+    	@include container;
+		@include row;
+        flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+        width: 924px;
+        height: 100%;
+
+        .counter {
+           @include row;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+
+            &:after {
+                content: '';
+                position: relative;
+                top: 30px;
+                display: inline;
+                width: 30px;
+                height: 2px;
+                left: calc(20% - 48px);
+                bottom: 0;               
+                border-bottom: 2px solid $cream;
+            }
+
+            .counter-image {
+                margin-bottom: 10px;
+            }
+
+            .counter-value {
+                font-family: $montULight;
+                font-size: 48px;
+                color: $white;
+            } 
+
+            .counter-desc {
+                font-size: 14px;
+                text-transform: uppercase;
+                color: $sandLight;
+            }
+        }
+    }
+}
