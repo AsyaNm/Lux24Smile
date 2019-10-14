@@ -4,5 +4,9 @@
 3. Выполнить `npm install`
 4. `gulp watch`
 
-Путь к файлу index.html:
+Путь к файлу index.html при развёртывании:
 \app\pages
+
+//link on example page
+
+https://asyanm.github.io/Lux24Smile/
