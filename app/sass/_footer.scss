@@ -1,257 +1,106 @@
 .main-footer {
-	@include row;
-	flex-direction: column;
-	justify-content: start;
-	align-items: center;
+    @include row;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 147px;
+    background-color: $grayDark;
 
-    .footer-1 {
-		@include row;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center; 
-		width: 100%;
-		height: 510px; 
-		background-color: $wetAsphalt;
+    .footer-container {
+        @include container;
+        @include row;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        font-size: 25px;
+        line-height: 50px;
+        color: $persian;
 
-	    .footer-1-container {
-	    	@include container;
-			@include row;
-			flex-direction: row;
-			justify-content: space-evenly;
-			align-items: center;
-			font-size: 14px;
-		    color: $gray;
-		    width: 100%;
-		    height: 100%;
+        .footer-contacts {
+            @include row;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: auto;
+            height: 100%;
+            //flex: 1;
 
-		    .footer-1-column {				
-		    	@include row;
-				flex-direction: column;
-				justify-content: flex-start;
-				align-items: flex-start;
-				width: calc(25% - 25px);
-				height: calc(100% - 100px);
-				padding-top: 100px;
-				margin-right: 25px;
+            .link__footer-phone:hover {
+                color: $white;
+            }
+        }
 
-				&:last-child {
-					margin-right: 0;
-				}
+        .footer-social-container {
+            @include row;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 100%;
+            min-width: 50px;
+            //flex: 1;
 
-				.footer-1-column-ul {
-					@include row;
-					flex-direction: column;
-					justify-content: flex-start;
-					align-items: flex-start;
-					width: 100%;			
-				}
+            .btn__social {
+                width: 55px;
+                height: 55px;
+                margin-right: 10px;
+                border: none;
+                color: $persian;
 
-				.delimiter-horizontal {	
-					@include row;
-					flex-direction: column;
-					justify-content: center;
-					align-items: flex-start;
-					width: 100%;			
-					padding: 10px 0 20px 0;
-
-					&:first-child {
-						padding-top: 0;
-					}
-
-					&:after {
-	                	content: '';
-		                position: relative;
-		                display: inline;
-		                top: 18px;
-		                left: 0;
-		                width: 100%;
-		                height: 1px;                
-		                border-bottom: 1px solid $grayDarker;
-		            }
-
-	                &:last-child:after {
-	                		border-bottom: none;
-	                }
-	            }
-		    }
-
-		    .footer-company-info {
-		    	height: calc(100% - 80px);
-				padding-top: 80px;
-
-		    	.link__company-info {
-			    	@include row;
-			    	justify-content: space-between;
-			    	align-items: center;
-
-					.logo {
-						transform: scale(0.98, 0.98);
-					}
-
-					&:hover .logo {
-					    transition: .3s ease-out;
-					    transform: scale(1, 1);
-					}
-			    }
-
-			    .company-info-text {
-			    	margin: 25px 0;
-			    }
-
-			    .link__readMore {
-			    	font-family: $montReg;
-			    	color: $clayWhite;
-
-				    .svg__arrow-readMore {
-	                    fill: $clayWhite;
-	                } 
-			    } 
-		    }
-
-			.footer-1-column-caption {
-				font-family: $raleBold;
-				font-size: 24px;
-				color: $white;
-				margin-bottom: 20px;
-
-			}
-
-			.footer-recentPosts .recentPost-item {
-
-				.recentPost-date {
-					font-size: 12px;
-					color: $grayDarker;
-				}
-
-				.recentPost-text {
-					display: inline;
-					width: 100%;
-
-				}
-
-                &.active {
-
-                	.recentPost-date {
-						color: $white;
-					}
-
-					.recentPost-text {
-						color: $sandLight;
-
-					}
+                &:last-child {
+                    margin-right: 0;
                 }
-			}
 
-			.footer-ourTwitter .ourTwitter-item {
+                .social-svg {
+                    width: 53px;
+                    height: 53px;
+                }
+            }
 
-				.ourTwitter-text {
-					display: inline;
-					width: 100%;
+            .btn__social__instagram {
+                background: url("../images/icon__instagram.svg") no-repeat;
 
-					.link__interior {
-						color: $linkInterior;
-					}
-				}
+                &:hover {
+                    background: url("../images/icon__instagram__hover.svg") no-repeat;
+                }
+            }
 
-				.ourTwitter-time {
-					font-size: 12px;
-					color: $grayDarker;
-					margin-top: 5px;
-				}
-			}
+            .btn__social__vk {
+                background: url("../images/icon__vk.svg") no-repeat;
 
-			.footer-dribbbleWidget-container {
-				@include row;
-				flex-direction: row;
-				justify-content: flex-start;
-				align-items: center;
-				width: 100%;
-				height: auto;
+                &:hover {
+                    background: url("../images/icon__vk__hover.svg") no-repeat;
+                }
+            }
 
-				.dribbbleWidget-image {
-					width: auto;
-					height: 98px;
-					background-color: $grayAshed;
-					margin-right: 10px;
-					margin-bottom: 10px;
+            .btn__social__facebook {
+                background: url("../images/icon__facebook.svg") no-repeat;
 
-					&:nth-child(2n) {
-						margin-right: 0;
-					}
-				}
-			}
+                &:hover {
+                    background: url("../images/icon__facebook__hover.svg") no-repeat;
+                }
+            }
 
-		    .link__interior,
-		    .link__external {
-				display: inline;
-				margin: 0 2px;
-			}	    	
-	    }
-    }
+            .btn__social__viber {
+                background: url("../images/icon__viber.svg") no-repeat;
 
-    .link__external {
-    	color: $linkExternal !important;
-    }
+                &:hover {
+                    background: url("../images/icon__viber__hover.svg") no-repeat;
+                }
+            }
+        }
 
-    .footer-2 {
-    	@include row;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: 108px; 
-		background-color: $black;
-
-		.footer-2-container {
-			@include container;
-			@include row;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-		    width: 100%;
-		    height: 100%;
-
-		    .footer-2-row {
-		    	@include row;
-				flex-direction: row;
-				align-items: center;
-				width: 50%;
-				height: 100%;
-				font-size: 13px;
-				color: $gray;
-
-				span {
-					display: flex;
-					flex-direction: row;
-
-					.link__external {
-						margin-left: 4px;
-					}
-				}
-
-				.link {
-					color: $gray;
-				}
-
-			    .delimiter-vertical {
-			    	margin: 0 10px;
-			    }				
-		    }
-
-		    .footer-row__left {
-				justify-content: flex-start;
-
-				.link__faq {
-					color: $sandLight;
-					text-transform: uppercase;
-				}
-		    }
-
-		    .footer-row__right {
-				justify-content: flex-end;
-		    }
-		}
+        .footer-address-container {
+            @include row;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            //flex: 1;
+            width: auto;
+            height: 100%;
+            max-width: 242px;
+        }
     }
 }

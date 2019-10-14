@@ -15,19 +15,16 @@
 
             .recentPost-image {
                 height: 220px;
-                background-color: $grayAshed;
             }
 
             .recentPost-desc {
                 padding-top: 30px;
                 font-size: 14px;
-                border: 1px solid $whiteAshed;
                 border-top: none;
                 width: calc(100% - 32px);
                 height: calc(100% - 251px);
 
                 .recentPost-caption {
-                    font-family: $raleMed;
                     font-size: 20px;
                     color: $gray;
                 }
@@ -39,11 +36,6 @@
                 }
 
                 .link__readMore {
-                    color: $sandLight;
-
-                    .svg__arrow-readMore {
-                        fill: $sandLight;
-                    }
                 }
             }
 
@@ -71,7 +63,6 @@
                 .recentPost-date-day {
                     height: 35px;
                     font-size: 24px;
-                    background-color: $grayDarker;                   
                     border-radius: 4px 4px 0 0;
                 }
 
@@ -89,30 +80,24 @@
 
                 .recentPost-image {
                     z-index: -1;
-                    background-color: $grayDarker;
                 }
 
                 .recentPost-desc {
                     border: none;
                     width: calc(100% - 30px);
                     height: calc(100% - 250px);
-                    background-color: $brown;
 
                     .recentPost-caption {
-                        color: $sandLight;
                     }
 
                     .recentPost-text {
-                        color: $white;
                     }
                 }
 
                 .recentPost-date-day {
-                    background-color: $sandLight;
                 }
 
                 .recentPost-date-month {
-                    background-color: $sandDarker;
                 }
             }
         }
@@ -133,11 +118,6 @@
                 .svg__arrow-slider {
                     width: 24px;
                     height: 24px;
-                    fill: $sliderArrow;
-
-                    &:hover {
-                        fill: $sliderArrow__hover;
-                    }
                 }
             }
 

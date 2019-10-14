@@ -4,12 +4,13 @@
 @import "mixins.scss";
 
 body {
+    font-family: $roboReg;
+    font-size: 14px;
+    line-height: 24px;
     background-color: $white;
-    font-family: $montLight;
-    font-size: 16px;
-    color: $grayLight;
-    line-height: 1.5;    
-    overflow-x: hidden;
+    color: $wetAsphalt;
+    //overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 div,
@@ -18,7 +19,7 @@ h2, h3,
 input,
 ul, li {
     outline: none;
-    font-family: $montLight;
+    font-family: $roboReg;
     margin: 0;
     padding: 0;
 }
@@ -51,7 +52,6 @@ a {
 	width: 100%;	
 
 	.section-caption {
-		font-family: $raleSemi;
 		font-size: 30px;
 		color: $gray;
 	}
@@ -72,21 +72,11 @@ a {
 	justify-content: center;
 	align-items: center;
 	width: auto;
-	color: $white;
-}
+	color: $persian;
 
-.animated-effect {	
-	transform: scale(0.99 , 0.99);
-
-	&:hover {
-	    transition: .3s ease-out;
-	    transform: scale(1, 1);
-	}
-}
-
-.link__company-info {
-	font-family: $raleReg;
-	font-size: 34px;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .btn {
@@ -96,78 +86,78 @@ a {
 	border: none;
 	outline: none;
 	margin: 0;
-	padding: 0;
-    background-color: transparent;
-	border-radius: 4px;
+    background-color: $orange;
+	color: $white;
+    font-size: 18px;
+
+    &:hover {
+        background-color: $persian;
+        color: $grayDark;
+    }
 }
 
-.btn__sand {
-	width: 170px;
-	height: 47px;
+.btn__border {
+    width: 372px;
+    height: 92px;
+    position: relative;
 
-    font-family: $raleExtra;
-	text-transform: uppercase;
-	color: $white;	
-	background-color: $sand;
-	box-shadow: 0 3px 0 $sandDark;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        width: 87px;
+        height: 33px;
+        border-top: 1px solid $white;
+        border-left: 1px solid $white;
+    }
 
-	&:hover {
-		background-color: $sandLight;
-	}
+    &:after {
+        content: '';
+        position: absolute;
+        right: 13px;
+        bottom: 13px;
+        width: 87px;
+        height: 33px;
+        border-right: 1px solid $white;
+        border-bottom: 1px solid $white;
+    }
 
+    &:hover {
+
+        &:before {
+            border-top: 1px solid $grayDark;
+            border-left: 1px solid $grayDark;
+        }
+
+        &:after {
+            border-right: 1px solid $grayDark;
+            border-bottom: 1px solid $grayDark;
+        }
+    }
 }
 
-.threeInRow-container {
-	@include container;
-	@include row;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	width: 100%;
-	height: auto;
+.slick-prev,
+.slick-next {
+    width: 50px;
+    height: 50px;
 
-	.threeInRow-item {
-		@include row;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: flex-start;
-		width: 369px;
-
-		.threeInRow-image {
-			width: 100%;
-			background-color: $grayAshed;
-		}
-
-		.threeInRow-desc {
-			@include row;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: flex-start;
-			width: calc(100% - 30px);
-			padding-top: 15px;
-			padding-left: 30px;
-		}
-	}
+    &:before {
+        display: none;
+    }
 }
 
-.svg__arrow-readMore {
-    width: 8px;
-    height: 8px;
-    margin-left: 8px;
-    padding-top: 3px;
+.slick-prev {
+    left: -60px;
+}
+
+.slick-next {
+    right: -60px;
 }
 
 // CORE
 @import "header.scss";
 @import "slider.scss";
-@import "services.scss";
-@import "realizationIdeas.scss";
-@import "textBoxes.scss";
-@import "latestProjects.scss";
-@import "video.scss";
-@import "mobileDevices.scss";
-@import "counters.scss";
 @import "recentPosts.scss";
-@import "partners.scss";
 @import "footer.scss";
 @import "media.scss";

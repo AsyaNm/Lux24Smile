@@ -2,708 +2,192 @@
 <html lang="ru">
   <head>
     <!-- head-->
-    <title>Waxom</title>
+    <title>Lux24Smile</title>
     <!-- styles-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="shortcut icon" href="app/images/favicon_.ico" type="image/x-icon">
-    <link rel="icon" href="app/images/favicon_waxom.ico" type="image/x-icon">
-    <link rel="stylesheet" href="app/css/main.css">
+    <link rel="shortcut icon" href="app/images/favicon_tooth.ico" type="image/x-icon">
+      <link rel="stylesheet" href="app/css/slick.css">
+      <link rel="stylesheet" href="app/css/slick-theme.css">
   </head>
+    <link rel="stylesheet" href="app/css/main.css">
   <body>
     <!-- main-wrapper -->
     <div class="wrapper">
       <!-- header-->
       <header class="main-header">
-        <div class="header-container">
-          <a class="link link__company-info" href="#">
-            <img class="logo" src="app/images/logo.png" width="auto" height="auto">
-            Waxom
-          </a>
-          <!-- menu -->
-          <ul class="header-menu">
-            <li>
-              <a class="link link__menu" href="#">Home</a>
-            </li>
-            <li>
-              <a class="link link__menu" href="#">About Us</a>
-            </li>
-            <li>
-              <a class="link link__menu" href="#">Portfolio</a>
-            </li>
-              <li>
-                <a class="link link__menu" href="#">Features</a>
-            </li>
-              <li>
-                <a class="link link__menu" href="#">Blog</a>
-            </li>
-              <li>
-                <a class="link link__menu" href="#">Pricing</a>
-            </li>
-              <li>
-                <a class="link link__menu" href="#">Shortcodes</a>
-            </li>
-              <li>
-                <a class="link link__menu" href="#">Contact</a>
-            </li>
-          </ul>
-          <!-- cart & search -->
-          <div class="header-nav">
-            <a class="link animated-effect link__cart" href="#"></a>
-            <a class="link animated-effect link__search" href="#">              
-              <svg class="svg__search" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
-                <g>
-                  <path d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z"/>
-                </g>
-              </svg>
-            </a>
-          </div>          
-        </div>
+          <div class="header__dark"></div>
+          <div class="header__light">
+              <nav class="header__light-container">
+                  <a class="link link__company-info" href="#">
+                      <img class="logo" src="app/images/logo.png" width="auto" height="auto">
+                  </a>
+                  <!-- Menu -->
+                  <ul class="header-menu">
+                      <li class="menu-paragraph">
+                          <a class="link link__menu" href="#">главная</a>
+                      </li>
+                      <li class="menu-paragraph">
+                          <a class="link link__menu" href="#">услуги и цены</a>
+                          <ul class="submenu">
+                              <li class="submenu-paragraph">
+                                  <a href="#" class="link link__submenu">
+                                      стоматологи-терапевты
+                                  </a>
+                              </li>
+                              <li class="submenu-paragraph">
+                                  <a href="#" class="link link__submenu">
+                                      стоматологи-хирурги
+                                  </a>
+                              </li>
+                              <li class="submenu-paragraph">
+                                  <a href="#" class="link link__submenu">
+                                      имплантологи
+                                  </a>
+                              </li>
+                              <li class="submenu-paragraph">
+                                  <a href="#" class="link link__submenu">
+                                      стоматологи-ортодонты
+                                  </a>
+                              </li>
+                              <li class="submenu-paragraph">
+                                  <a href="#" class="link link__submenu">
+                                      детские стоматологи
+                                  </a>
+                              </li>
+                              <li class="submenu-paragraph">
+                                  <a href="#" class="link link__submenu">
+                                      стоматологи-ортопеды
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="menu-paragraph">
+                          <a class="link link__menu" href="#">акции</a>
+                      </li>
+                      <li class="menu-paragraph">
+                          <a class="link link__menu" href="#">отзывы</a>
+                      </li>
+                      <li class="menu-paragraph">
+                          <a class="link link__menu" href="#">о нас</a>
+                      </li>
+                      <li class="menu-paragraph">
+                          <a class="link link__menu" href="#">контакты</a>
+                      </li>
+                  </ul>
+                  <!-- Phone -->
+                  <a href="tel:88881236790" class="link link__header-phone">8(888) 123 67 90</a>
+              </nav>
+          </div>
       </header>
-      <!-- Slider -->         
-      <section class="slider">
-        <div class="slider-container">
-          <!-- slider image -->          
-          <img class="slider-image" src="app/images/slider-background.png" alt="">      
-          <!-- slider body -->
-          <div class="slider-body">
-            <span>
-              Unique and Modern Design
-            </span>
-            <h2 class="slider-caption">
-              Portfolio PSD Template
-            </h2>
-            <p class="slider-discription">
-              Nam liber tempor cum soluta nobis eleifend option congue nihil imper-diet doming id quod mazim placerat facer possim assum.
-            </p>   
-              <a class="btn btn__sand btn__slider" href="#">Get Started</a>
-          </div>   
-        </div>         
-        <!-- slider navigation -->
-        <section class="slider-nav">                   
-          <a class="slider-arrow slider-arrow__left animated-effect" href="#">
-            <svg class="svg__arrow-slider" transform="rotate(180)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
-              <g>
-                <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                  c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
-                  "/>
-              </g>
-            </svg>
-          </a>
-          <a class="slider-arrow slider-arrow__right animated-effect" href="#">
-            <svg class="svg__arrow-slider" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;" xml:space="preserve">
-              <g>
-                <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                  c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
-                  "/>
-              </g>
-            </svg>
-          </a>
-          <div class="slider-points">
-            <a class="link animated-effect slider-point" href="#"></a>
-            <a class="link slider-point active" href="#"></a>
-            <a class="link animated-effect slider-point" href="#"></a>
-            <a class="link animated-effect slider-point" href="#"></a>
-            <a class="link animated-effect slider-point" href="#"></a>
-          </div>
-        </section> 
-      </section>
-      <!-- page-content -->  
+        <!-- page-content -->
       <main class="page-content">
-        <!-- Services -->
-        <section class="services">
-          <div class="services-container">
-            <div class="service">
-              <!-- Web & App design -->
-              <span class="service-logo service-logo__web-app-design"></span>
-              <h3 class="secvice-caption">
-                Web & App Design
-              </h3>
-              <p class="service-desc">
-                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-              </p>
-            </div>
-            <!-- Development -->
-            <div class="service">
-              <span class="service-logo service-logo__development"></span>
-              <h3 class="secvice-caption">
-                Development
-              </h3>
-              <p class="service-desc">
-                Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-              </p>
-            </div>
-            <!-- Customization -->
-            <div class="service">
-              <span class="service-logo service-logo__customization"></span>
-              <h3 class="secvice-caption">
-                Customization
-              </h3>
-              <p class="service-desc">
-                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-              </p>
-            </div>
-            <!-- Marketing -->
-            <div class="service">
-              <span class="service-logo service-logo__marketing"></span>
-              <h3 class="secvice-caption">
-                Marketing
-              </h3>
-              <p class="service-desc">
-                Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
-              </p>
-            </div>
-          </div>
-        </section>
-        <!-- Waxom is realization of your ideas -->
-        <section class="realizationIdeas">
-          <div class="realizationIdeas-container">
-            <h2 class="section-caption">Waxom is Realization of your Ideas.</h2>
-            <p class="section-description">
-              Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-            </p>
-            <div class="background-group">
-              <img class="background background__left" src="app/images/realizationIdeas-background-left.png" alt="">
-              <img class="background background__right" src="app/images/realizationIdeas-background-right.png" alt="">
-              <img class="background background__center" src="app/images/realizationIdeas-background-center.png" alt="">
-            </div>
-          </div>
-        </section>
-        <!-- Text Boxes -->
-        <section class="textBoxes">
-          <div class="textBoxes-container">
-            <div class="column-left">
-              <h2 class="section-caption"><span>Waxom</span> Multipurpose WordPress Theme</h2>
-              <span class="section-description">
-                Don't Forget to Rate the Template. Thanks so much!
-              </span>
-            </div>
-            <a class="btn btn__sand" href="#">Purchase Now</a>
-          </div>
-        </section>
-        <!-- Latest Projects -->
-        <section class="latestProjects">
-          <h2 class="section-caption">Our Latest Projects.</h2>
-          <p class="section-description">
-            Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-          </p>
-          <div class="categories">
-            <button class="btn btn__category">All</button>
-            <button class="btn btn__category">Web Design</button>
-            <button class="btn btn__category">Mobile App</button>
-            <button class="btn btn__category">Illustration</button>
-            <button class="btn btn__category">Photography</button>
-          </div>
-          <!-- Latest Projects Container -->
-          <div class="threeInRow-container latestProjects-container">
-            <div class="threeInRow-item latestProject-item">
-              <img class="threeInRow-image latestProject-image" src="app/images/latestProject-image_1.png" alt="">
-              <div class="threeInRow-desc latestProject-desc">
-                <h3 class="latestProject-caption">
-                  Claritas Etiam Processus
-                </h3>
-                <div class="latestProject-category-container">
-                  <a class="link link__latestProject-category" href="#">Photography</a>
-                  <span>,</span>
-                  <a class="link link__latestProject-category" href="#">Nature</a>
-                </div>                
+          <!-- Slider -->
+          <section class="slider">
+              <div class="slider-container">
+                  <!-- slider image -->
+                  <img class="slider-image" src="app/images/slider-background.png" alt="">
+                  <!-- slider body -->
+                  <div class="slider-body">
+                      <img class="slider-image" src="app/images/slider-background.png" alt="">
+                      <div class="slider-body-container">
+                          <div class="slider-description-border">
+                              <div class="slider-description">
+                                  <span class="counter">
+                                      01
+                                  </span>
+                                  <p class="values">
+                                      Лучшие стоматологи<br>
+                                      24 часа в сутки<br>
+                                      7 дней в неделю
+                                  </p>
+                              </div>
+                          </div>
+                        <a class="btn btn__border btn__slider" href="#">Записаться на прием</a>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="threeInRow-item latestProject-item">
-              <img class="threeInRow-image latestProject-image" src="app/images/latestProject-image_2.png" alt="">
-              <div class="threeInRow-desc latestProject-desc">
-                <h3 class="latestProject-caption">
-                  Quam Nutamus Farum
-                </h3>
-                <div class="latestProject-category-container">
-                  <a class="link link__latestProject-category" href="#">Graphic Design</a>
-                  <span>,</span>
-                  <a class="link link__latestProject-category" href="#">Mock-Up</a>
-                </div>                
-              </div>
-            </div>
-            <div class="threeInRow-item latestProject-item">
-              <img class="threeInRow-image latestProject-image" src="app/images/latestProject-image_3.png" alt="">
-              <div class="threeInRow-desc latestProject-desc">
-                <h3 class="latestProject-caption">
-                  Usus Legentis Videntur
-                </h3>
-                <div class="latestProject-category-container">
-                  <a class="link link__latestProject-category" href="#">Photography</a>
-                  <span>,</span
-                  <a class="link link__latestProject-category" href="#">Holiday</a>
-                </div>                
-              </div>
-            </div>
-            <div class="threeInRow-item latestProject-item">
-              <img class="threeInRow-image latestProject-image" src="app/images/latestProject-image_4.png" alt="">
-              <div class="threeInRow-desc latestProject-desc">
-                <h3 class="latestProject-caption">
-                  Claritas Etiam Processus
-                </h3>
-                <div class="latestProject-category-container">
-                  <a class="link link__latestProject-category" href="#">Photography</a>
-                  <span>,</span>
-                  <a class="link link__latestProject-category" href="#">Nature</a>
-                </div>                
-              </div>
-            </div>
-            <div class="threeInRow-item latestProject-item">
-              <img class="threeInRow-image latestProject-image" src="app/images/latestProject-image_5.png" alt="">
-              <div class="threeInRow-desc latestProject-desc">
-                <h3 class="latestProject-caption">
-                  Claritas Etiam Processus
-                </h3>
-                <div class="latestProject-category-container">
-                  <a class="link link__latestProject-category" href="#">Photography</a>
-                  <span>,</span>
-                  <a class="link link__latestProject-category" href="#">Nature</a>
-                </div>                
-              </div>
-            </div>
-            <div class="threeInRow-item latestProject-item">
-              <img class="threeInRow-image latestProject-image" src="app/images/latestProject-image_6.png" alt="">
-              <div class="threeInRow-desc latestProject-desc">
-                <h3 class="latestProject-caption">
-                  Claritas Etiam Processus
-                </h3>
-                <div class="latestProject-category-container">
-                  <a class="link link__latestProject-category" href="#">Photography</a>
-                  <span>,</span>
-                  <a class="link link__latestProject-category" href="#">Nature</a>
-                </div>                
-              </div>
-            </div>
-          </div>
-          <a class="btn btn__sand" href="#">Load More</a>
-        </section>
-        <!-- Video Presentation -->
-        <section class="video">
-          <div class="video-container">
-            <button class="btn btn__play-video animated-effect"></button>
-            <h2 class="section-caption">Waxom Video Presentation</h2>
-            <p class="section-description">
-              Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-            </p>
-            <span class="video-time">03:26</span>
-          </div>
-        </section>
-        <!-- Mobile Devices -->
-        <section class="mobileDevices">
-          <div class="mobileDevices-container">
-            <img class="mobileDevices-image" src="app/images/mobileDevices-background.png" alt="">
-            <div class="column-right">
-              <h2 class="section-caption">Excellent for Mobile Devices.</h2>
-              <p class="section-description">
-                Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-              </p>
-              <ul class="features">
-                <li>
-                  <svg class="svg__arrow-circle" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                       viewBox="0 0 455.992 455.992" style="enable-background:new 0 0 455.992 455.992;" xml:space="preserve">
-                    <g>
-                      <g>
+              <!--<div class="slider-container">-->
+                  <!--&lt;!&ndash; slider image &ndash;&gt;-->
+                  <!--<img class="slider-image" src="app/images/slider-background_.png" alt="">-->
+                  <!--&lt;!&ndash; slider body &ndash;&gt;-->
+                  <!--<div class="slider-body">-->
+                      <!--<img class="slider-image" src="app/images/slider-background_.png" alt="">-->
+                      <!--<div class="slider-body-container">-->
+                          <!--<div class="slider-description-border">-->
+                              <!--<div class="slider-description">-->
+                              <!--<span class="counter">-->
+                                  <!--02-->
+                              <!--</span>-->
+                                  <!--<p class="values">-->
+                                      <!--Лучшие стоматологи<br>-->
+                                      <!--24 часа в сутки<br>-->
+                                      <!--7 дней в неделю-->
+                                  <!--</p>-->
+                              <!--</div>-->
+                          <!--</div>-->
+                          <!--<a class="btn btn__border btn__slider" href="#">Записаться на прием</a>-->
+                      <!--</div>-->
+                  <!--</div>-->
+              <!-- slider navigation -->
+              <section class="slider-nav">
+                  <div class="slider-points">
+                      <a class="link animated-effect slider-point" href="#"></a>
+                      <a class="link slider-point active" href="#"></a>
+                      <a class="link animated-effect slider-point" href="#"></a>
+                      <a class="link animated-effect slider-point" href="#"></a>
+                      <a class="link animated-effect slider-point" href="#"></a>
+                  </div>
+                  <div class="slider-arrows">
+                      <a class="slider-arrow slider-arrow__left animated-effect" href="#">
+                          <svg class="slider-arrow__svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="408px" height="408px" viewBox="0 0 408 408" style="enable-background:new 0 0 408 408;" xml:space="preserve">
                         <g>
-                          <path d="M227.996,0C102.081,0,0,102.081,0,227.996c0,125.945,102.081,227.996,227.996,227.996
-                            c125.945,0,227.996-102.051,227.996-227.996C455.992,102.081,353.941,0,227.996,0z M299.435,238.788l-98.585,98.585
-                            c-5.928,5.897-15.565,5.897-21.492,0c-5.928-5.928-5.928-15.595,0-21.492l87.885-87.885l-87.885-87.885
-                            c-5.928-5.928-5.928-15.565,0-21.492s15.565-5.928,21.492,0l98.585,98.585c3.04,2.979,4.469,6.901,4.438,10.792
-                            C303.873,231.918,302.414,235.809,299.435,238.788z"/>
+                            <g id="arrow-back">
+                                <path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z"/>
+                            </g>
                         </g>
-                      </g>
-                    </g>
-                  </svg>
-                  Nam liber tempor cum soluta nobis eleifend option;
-                </li>
-                <li>
-                  <svg class="svg__arrow-circle" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                       viewBox="0 0 455.992 455.992" style="enable-background:new 0 0 455.992 455.992;" xml:space="preserve">
-                    <g>
-                      <g>
+                      </svg>
+                      </a>
+                      <a class="slider-arrow slider-arrow__right animated-effect" href="#">
+                          <svg class="slider-arrow__svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="408px" height="408px" viewBox="0 0 408 408" style="enable-background:new 0 0 408 408;" xml:space="preserve">
                         <g>
-                          <path d="M227.996,0C102.081,0,0,102.081,0,227.996c0,125.945,102.081,227.996,227.996,227.996
-                            c125.945,0,227.996-102.051,227.996-227.996C455.992,102.081,353.941,0,227.996,0z M299.435,238.788l-98.585,98.585
-                            c-5.928,5.897-15.565,5.897-21.492,0c-5.928-5.928-5.928-15.595,0-21.492l87.885-87.885l-87.885-87.885
-                            c-5.928-5.928-5.928-15.565,0-21.492s15.565-5.928,21.492,0l98.585,98.585c3.04,2.979,4.469,6.901,4.438,10.792
-                            C303.873,231.918,302.414,235.809,299.435,238.788z"/>
+                            <g id="arrow-back">
+                                <path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z"/>
+                            </g>
                         </g>
-                      </g>
-                    </g>
-                  </svg>
-                  Option congue nihil imperdiet doming id quod mazim placerat facer;
-                </li>
-                <li>
-                  <svg class="svg__arrow-circle" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                       viewBox="0 0 455.992 455.992" style="enable-background:new 0 0 455.992 455.992;" xml:space="preserve">
-                    <g>
-                      <g>
-                        <g>
-                          <path d="M227.996,0C102.081,0,0,102.081,0,227.996c0,125.945,102.081,227.996,227.996,227.996
-                            c125.945,0,227.996-102.051,227.996-227.996C455.992,102.081,353.941,0,227.996,0z M299.435,238.788l-98.585,98.585
-                            c-5.928,5.897-15.565,5.897-21.492,0c-5.928-5.928-5.928-15.595,0-21.492l87.885-87.885l-87.885-87.885
-                            c-5.928-5.928-5.928-15.565,0-21.492s15.565-5.928,21.492,0l98.585,98.585c3.04,2.979,4.469,6.901,4.438,10.792
-                            C303.873,231.918,302.414,235.809,299.435,238.788z"/>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  Eodem modo typi, qui nunc nobis videntur parum futurum;
-                </li>
-                <li>
-                  <svg class="svg__arrow-circle" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                       viewBox="0 0 455.992 455.992" style="enable-background:new 0 0 455.992 455.992;" xml:space="preserve">
-                    <g>
-                      <g>
-                        <g>
-                          <path d="M227.996,0C102.081,0,0,102.081,0,227.996c0,125.945,102.081,227.996,227.996,227.996
-                            c125.945,0,227.996-102.051,227.996-227.996C455.992,102.081,353.941,0,227.996,0z M299.435,238.788l-98.585,98.585
-                            c-5.928,5.897-15.565,5.897-21.492,0c-5.928-5.928-5.928-15.595,0-21.492l87.885-87.885l-87.885-87.885
-                            c-5.928-5.928-5.928-15.565,0-21.492s15.565-5.928,21.492,0l98.585,98.585c3.04,2.979,4.469,6.901,4.438,10.792
-                            C303.873,231.918,302.414,235.809,299.435,238.788z"/>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  Investigationes demonstraverunt lectores
-                </li>
-              </ul>            
-            </div>
-          </div>
-        </section>
-        <!-- Counters -->
-        <section class="counters">
-          <div class="counters-container">
-            <div class="counter">
-              <img src="app/images/counters-satisfied-clients.png" alt="" class="counter-image">
-              <span class="counter-value">3587</span>
-              <span class="counter-desc">Satisfied Clients</span>
-            </div>
-            <div class="counter">
-              <img src="app/images/counters-cups.png" alt="" class="counter-image">
-              <span class="counter-value">207</span>
-              <span class="counter-desc">Cups of coffee</span>
-            </div>
-            <div class="counter">
-              <img src="app/images/counters-blog-posts.png" alt="" class="counter-image">
-              <span class="counter-value">2500</span>
-              <span class="counter-desc">Blog posts</span>
-            </div>
-            <div class="counter">
-              <img src="app/images/counters-likes.png" alt="" class="counter-image">
-              <span class="counter-value">873</span>
-              <span class="counter-desc">Likes</span>
-            </div>
-            <div class="counter">
-              <img src="app/images/counters-we-launched.png" alt="" class="counter-image">
-              <span class="counter-value">900</span>
-              <span class="counter-desc">We launched</span>
-            </div>
-          </div>
-        </section>
-        <!-- Recent Posts -->
-        <section class="recentPosts">
-          <h2 class="section-caption">Recent Posts.</h2>
-          <p class="section-description">
-            Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-          </p>
-          <div class="threeInRow-container recentPosts-container">
-            <div class="threeInRow-item recentPost-item animated-effect">
-              <img class="threeInRow-image recentPost-image" src="app/images/recentPost-image_1.png" alt="">
-              <div class="threeInRow-desc recentPost-desc">
-                <h3 class="recentPost-caption">
-                  Lorem ipsum dolor sit amet
-                </h3>
-                <p class="recentPost-text">
-                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-                </p>
-                <a class="link link__readMore" href="#">
-                  Read More
-                  <svg class="svg__arrow-readMore" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 41.999 41.999" style="enable-background:new 0 0 41.999 41.999;" xml:space="preserve">
-                    <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
-                    c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20
-                    c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"/>
-                  </svg>
-                </a>
-              </div>
-              <div class="recentPost-date">
-                <span class="recentPost-date-day">
-                  30
-                </span>
-                <span class="recentPost-date-month">
-                  Sep.
-                </span>
-              </div>
-            </div>
-            <div class="threeInRow-item recentPost-item active">
-              <img class="threeInRow-image recentPost-image" src="app/images/recentPost-image_2.png" alt="">
-              <div class="threeInRow-desc recentPost-desc">
-                <h3 class="recentPost-caption">
-                  Lorem ipsum dolor sit amet
-                </h3>
-                <p class="recentPost-text">
-                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-                </p>
-                <a class="link link__readMore" href="#">
-                  Read More
-                  <svg class="svg__arrow-readMore" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 41.999 41.999" style="enable-background:new 0 0 41.999 41.999;" xml:space="preserve">
-                    <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
-                    c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20
-                    c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"/>
-                  </svg>
-                </a>
-              </div>
-              <div class="recentPost-date">
-                <span class="recentPost-date-day">
-                  30
-                </span>
-                <span class="recentPost-date-month">
-                  Sep.
-                </span>
-              </div>
-            </div>
-            <div class="threeInRow-item recentPost-item animated-effect">
-              <img class="threeInRow-image recentPost-image" src="app/images/recentPost-image_3.png" alt="">
-              <div class="threeInRow-desc recentPost-desc">
-                <h3 class="recentPost-caption">
-                  Lorem ipsum dolor sit amet
-                </h3>
-                <p class="recentPost-text">
-                  Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-                </p>
-                <a class="link link__readMore" href="#">
-                  Read More
-                  <svg class="svg__arrow-readMore" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     viewBox="0 0 41.999 41.999" style="enable-background:new 0 0 41.999 41.999;" xml:space="preserve">
-                    <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
-                    c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20
-                    c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"/>
-                  </svg>
-                </a>
-              </div>
-              <div class="recentPost-date">
-                <span class="recentPost-date-day">
-                  30
-                </span>
-                <span class="recentPost-date-month">
-                  Sep.
-                </span>
-              </div>
-            </div>
-            <div class="slider-nav">                   
-              <a class="slider-arrow slider-arrow__left animated-effect" href="#">
-                <svg class="svg__arrow-slider" transform="rotate(180)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
-              <g>
-                <g id="Right">
-                  <g>
-                    <path d="M277.58,179.679l-0.057,0.077c-5.125-4.705-11.857-7.631-19.335-7.631c-15.835,0-28.688,12.852-28.688,28.688
-                      c0,8.377,3.634,15.835,9.352,21.076l-0.057,0.077L330.48,306l-91.686,84.055l0.057,0.076c-5.718,5.221-9.352,12.68-9.352,21.057
-                      c0,15.836,12.852,28.688,28.688,28.688c7.478,0,14.21-2.926,19.335-7.611l0.057,0.076l114.75-105.188
-                      c5.91-5.451,9.295-13.101,9.295-21.152s-3.385-15.702-9.295-21.152L277.58,179.679z M306,0C137.012,0,0,137.012,0,306
-                      s137.012,306,306,306s306-137.012,306-306S474.988,0,306,0z M306,554.625C168.912,554.625,57.375,443.088,57.375,306
-                      S168.912,57.375,306,57.375S554.625,168.912,554.625,306S443.088,554.625,306,554.625z"/>
-                  </g>
-                </g>
-              </g>
-                </svg>
-              </a>
-              <a class="slider-arrow slider-arrow__right animated-effect" href="#">
-                <svg class="svg__arrow-slider" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="612px" height="612px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
-                  <g>
-                    <g id="Right">
-                      <g>
-                        <path d="M277.58,179.679l-0.057,0.077c-5.125-4.705-11.857-7.631-19.335-7.631c-15.835,0-28.688,12.852-28.688,28.688
-                          c0,8.377,3.634,15.835,9.352,21.076l-0.057,0.077L330.48,306l-91.686,84.055l0.057,0.076c-5.718,5.221-9.352,12.68-9.352,21.057
-                          c0,15.836,12.852,28.688,28.688,28.688c7.478,0,14.21-2.926,19.335-7.611l0.057,0.076l114.75-105.188
-                          c5.91-5.451,9.295-13.101,9.295-21.152s-3.385-15.702-9.295-21.152L277.58,179.679z M306,0C137.012,0,0,137.012,0,306
-                          s137.012,306,306,306s306-137.012,306-306S474.988,0,306,0z M306,554.625C168.912,554.625,57.375,443.088,57.375,306
-                          S168.912,57.375,306,57.375S554.625,168.912,554.625,306S443.088,554.625,306,554.625z"/>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </section>
-        <!-- Partners -->
-        <section class="partners">
-          <div class="partners-container">
-            <a href="#" class="link link__partner animated-effect">
-              <img src="app/images/partners-logo_1.png" alt="" class="partner-logo">
-            </a>
-            <a href="#" class="link link__partner animated-effect">
-              <img src="app/images/partners-logo_2.png" alt="" class="partner-logo">
-            </a>
-            <a href="#" class="link link__partner animated-effect">
-              <img src="app/images/partners-logo_3.png" alt="" class="partner-logo">
-            </a>
-            <a href="#" class="link link__partner animated-effect">
-              <img src="app/images/partners-logo_4.png" alt="" class="partner-logo">
-            </a>     
-          </div>
-        </section>
+                      </svg>
+                      </a>
+                  </div>
+              </section>
+          </section>
       </main>
-      <!-- footer-->
-      <footer class="main-footer">
-        <!-- footer-1 -->
-        <section class="footer-1">          
-          <div class="footer-1-container">
-            <!-- About Waxom -->
-            <div class="footer-1-column footer-company-info">              
-             <a class="link link__company-info" href="#">
-                <img class="logo" src="app/images/logo.png" width="auto" height="auto">
-                Waxom
-              </a>
-              <p class="company-info-text">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.
-              </p>
-              <a class="link link__readMore" href="#">
-                Read More
-                <svg class="svg__arrow-readMore" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   viewBox="0 0 41.999 41.999" style="enable-background:new 0 0 41.999 41.999;" xml:space="preserve">
-                  <path d="M36.068,20.176l-29-20C6.761-0.035,6.363-0.057,6.035,0.114C5.706,0.287,5.5,0.627,5.5,0.999v40
-                  c0,0.372,0.206,0.713,0.535,0.886c0.146,0.076,0.306,0.114,0.465,0.114c0.199,0,0.397-0.06,0.568-0.177l29-20
-                  c0.271-0.187,0.432-0.494,0.432-0.823S36.338,20.363,36.068,20.176z"/>
-                </svg>
-              </a>
+        <!-- footer -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-contacts">
+                    <!-- Phone -->
+                    <a href="tel:88881236790" class="link link__footer-phone">8(888) 123 67 90</a>
+                    <a href="tel:88881236790" class="link link__footer-phone">8(888) 123 67 90</a>
+                </div>
+                <div class="footer-social-container">
+                    <a href="#" class="btn__social btn__social__instagram" target="_blank"></a>
+                    <a href="#" class="btn__social btn__social__vk" target="_blank"></a>
+                    <a href="#" class="btn__social btn__social__facebook" target="_blank"></a>
+                    <a href="tel:88881236790" class="btn__social btn__social__viber"></a>
+                </div>
+                <div class="footer-address-container">
+                    г. Самара, ул. Ивана<br>
+                    Булкина 478, офис 4
+                </div>
             </div>
-            <!-- Recent Posts Footer -->
-            <div class="footer-1-column footer-recentPosts">
-              <h3 class="footer-1-column-caption">
-                Recent Posts
-              </h3>
-              <ul class="footer-1-column-ul">
-                <li class="recentPost-item delimiter-horizontal">
-                  <span class="recentPost-date">
-                    September 08, 2015
-                  </span>
-                  <p class="recentPost-text">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                  </p>
-                </li>
-                <li class="recentPost-item delimiter-horizontal active">
-                  <span class="recentPost-date">
-                    September 08, 2015
-                  </span>
-                  <p class="recentPost-text">
-                    Diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                  </p>
-                </li>
-                <li class="recentPost-item delimiter-horizontal">
-                  <span class="recentPost-date">
-                    September 08, 2015
-                  </span>
-                  <p class="recentPost-text">
-                    Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <!-- Our Twitter -->
-            <div class="footer-1-column footer-ourTwitter">
-              <h3 class="footer-1-column-caption">
-                Our Twitter
-              </h3>
-              <ul class="footer-1-column-ul">
-                <li class="ourTwitter-item delimiter-horizontal">
-                  <p class="ourTwitter-text">
-                    <a href="#" class="link link__interior">
-                      @waxom
-                    </a> 
-                    Cum soluta nobis eleifend option congue nihil imperdiet doming
-                  </p>
-                  <span class="ourTwitter-time">
-                    3 mins ago
-                  </span>
-                </li>
-                <li class="ourTwitter-item delimiter-horizontal">
-                  <p class="ourTwitter-text">
-                    Mirum est 
-                    <a href="#" class="link link__interior">
-                      #envato
-                    </a> 
-                    notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
-                  </p>
-                  <span class="ourTwitter-time">
-                    5 hours ago
-                  </span>
-                </li>
-                <li class="ourTwitter-item delimiter-horizontal">
-                  <p class="ourTwitter-text">
-                    Soluta nobis option 
-                    <a href="#" class="link link__external">
-                      bit.ly/1Hniso7
-                    </a>
-                  </p>
-                  <span class="ourTwitter-time">
-                    20 days ago
-                  </span>
-                </li>
-              </ul>
-            </div>
-            <!-- Dribbble Widget -->
-            <div class="footer-1-column footer-dribbbleWidget">
-              <h3 class="footer-1-column-caption">
-                Dribbble Widget
-              </h3>
-              <div class="footer-dribbbleWidget-container">
-                <img src="app/images/dribbbleWidget-image_1.png" alt="" class="dribbbleWidget-image">
-                <img src="app/images/dribbbleWidget-image_2.png" alt="" class="dribbbleWidget-image">
-                <img src="app/images/dribbbleWidget-image_3.png" alt="" class="dribbbleWidget-image">
-                <img src="app/images/dribbbleWidget-image_4.png" alt="" class="dribbbleWidget-image">
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- footer-2 -->
-        <section class="footer-2">
-          <div class="footer-2-container">            
-            <div class="footer-2-row footer-row__left">
-              <span class="copyright">
-                Copyright © 2015
-                <a href="#" class="link link__external">
-                  Waxom
-                </a>
-              </span>
-              <span class=" delimiter-vertical"> | </span>
-              <a href="#" class="link link__policy">
-                Privacy Policy
-              </a>
-              <span class="delimiter-vertical"> | </span>
-              <a href="#" class="link link__faq">
-                FAQ
-              </a>
-              <span class="delimiter-vertical"> | </span>
-              <a href="#" class="link link__support">
-                Support
-              </a>
-            </div>
-            <div class="footer-2-row footer-row__right">
-              <span class="designed">
-                Designed by 
-                <a href="#" class="link link__external link__theme">
-                  ThemeFire 
-                </a>                
-              </span>
-              <span class="delimiter-vertical"> | </span>
-              <span class="only">
-                Only on  
-                <a href="#" class="link link__external link__market">
-                  Envato Market
-                </a>
-              </span>
-            </div>
-          </div>
-        </section>
-      </footer>
+        </footer>
     </div>
   </body>
   <!-- scripts-->
+  <script src="app/js/jquery-3.2.0.min.js"></script>
+  <script src="app/js/slick.js"></script>
+  <script src="app/js/script.js"></script>
 </html>
